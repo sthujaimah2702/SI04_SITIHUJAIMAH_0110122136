@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang 3.2</title>
+</head>
+
+<body style="background-color:rgb(218, 218, 218);">
+    <fieldset>
+        <!--buat navbar-->
+        <nav style="text-align:center;">
+            <a href="">Home </a>|
+            <a href="">Generate Link </a>|
+            <a href="">Transaction History </a>|
+            <a href="">Policy </a>|
+            <a href="">Logout </a>
+        </nav>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend style="text-align:center;">
+            <h2>Ordering Goods</h2>
+        </legend>
+        <form action="SUCCESS3-2_0110122136_SITIHUJAIMAH.html" method="post">
+            <!--buat informasi transaksi-->
+
+            <table style="width: 1000px;">
+                <!--buat title here-->
+                <tr>
+                    <td rowspan="11" style="text-align:center;">
+                        <img src="foto/uploadfoto.jpg" alt="gambar macook air" width="200" height="150"><br>
+                        <input type="file" name="foto">
+                    </td>
+                    <td>
+                        <label for="title"><b>Title Here</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="title" placeholder="MacBook Air $800">
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat description-->
+                    <td>
+                        <label for="description"><b>Description</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <textarea id="description" cols="20" rows="5" placeholder="Year : 2009 
+                        Mode: 
+                        Condition : Mint"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat account number-->
+                    <td>
+                        <label for="account-number"><b>Account Number</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="account-number" placeholder="123-456-789-0">
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat bank-->
+                    <td>
+                        <label for="bank"><b>Bank</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <select name="bank" id="bank">
+                            <option>HSBC</option>
+                            <option>Mandiri</option>
+                            <option>BJB</option>
+                            <option>BCA</option>
+                            <option>BSI</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat account holder-->
+                    <td>
+                        <label for="account-holder"><b>Account Holder</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="account-holder" placeholder="Name Here">
+                    </td>
+                </tr>
+                <tr>
+                    <!--transaction-->
+                    <td>
+                        <label for="transaction"><b>Transaction</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <select name="transaction" id="transaction">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat keterangan transaksi-->
+                    <td colspan="3"><b>* if the transaction is for 3 person, choose 3 from the drop-down list</b></td>
+                </tr>
+                <tr style="color:rgb(44, 173, 44);">
+                    <td colspan="3">
+                        <input type="checkbox" id="mobile-phone" name="transaction" checked>
+                        <label for="mobile-phone">Send to Mobile Phone</label>
+                    </td>
+                </tr>
+                <tr style="color:rgb(44, 173, 44);">
+                    <td colspan="3">
+                        <input type="checkbox" id="email" name="transaction" checked>
+                        <label for="email">Send to Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="send-mobile-phone"><b>Send to Mobile Phone</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="send-mobile-phone" placeholder="1234567890">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="send-email"><b>Send to Email</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="email" id="send-email" placeholder="mfmm2g13@soton.ac.uk">
+                    </td>
+                </tr>
+            </table>
+            <!--buat tombol kirim-->
+            <p style="text-align:center;"><button type="submit" style="background-color:rgb(9, 197, 21);">Generate Nabr
+                    Link</button></p>
+            <hr>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

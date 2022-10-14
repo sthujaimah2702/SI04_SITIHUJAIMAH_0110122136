@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Success Barang 3.2</title>
+</head>
+
+<body style="background-color:rgb(218, 218, 218);">
+    <fieldset>
+        <!--buat navbar-->
+        <nav style="text-align:center;">
+            <a href="">Home </a>|
+            <a href="">Generate Link </a>|
+            <a href="">Transaction History </a>|
+            <a href="">Policy </a>|
+            <a href="">Logout </a>
+        </nav>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend style="text-align:center;">
+            <h2>Payment of Goods</h2>
+        </legend>
+        <form>
+            <!--buat informasi transaksi-->
+            <table style="width: 1000px;">
+                <!--buat title here-->
+                <tr>
+                    <td rowspan="11" style="text-align:center;">
+                        <img src="foto/macbookair.jpg" alt="gambar macook air" width="200" height="150">
+                    <td><b>Title Here</b></td>
+                    <td>:</td>
+                    <td>MacBook Air $800</td>
+                </tr>
+                <tr>
+                    <!--buat description-->
+                    <td><b>Description</b>
+                    </td>
+                    <td>:</td>
+                    <td>Year : 2009<br>
+                        mode :<br>
+                        Condition : Mint
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat total amount-->
+                    <td><b>Total Amount</b></td>
+                    <td>:</td>
+                    <td>$800</td>
+                </tr>
+                <tr>
+                    <!--buat pay to-->
+                    <td><b>Pay to</b></td>
+                    <td>:</td>
+                    <td>123-456-789-0</td>
+                </tr>
+                <tr>
+                    <!--buat payment type-->
+                    <td>
+                        <label for="payment-type"><b>Payment type</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <select name="payment-type" id="payment-type">
+                            <option>Debit</option>
+                            <option>Kredit</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat account holder-->
+                    <td>
+                        <label for="account-holder"><b>Account Holder</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="account-holder" placeholder="Name Here">
+                    </td>
+                </tr>
+                <tr>
+                    <!--buat account number-->
+                    <td>
+                        <label for="account-number"><b>Account Number</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="account-number" placeholder="123-456-789-0">
+                    </td>
+                </tr>
+                <tr style="color:rgb(44, 173, 44);">
+                    <td colspan="3">
+                        <input type="checkbox" id="mobile-phone" name="transaction" checked>
+                        <label for="mobile-phone">Send to Mobile Phone</label>
+                    </td>
+                </tr>
+                <tr style="color:rgb(44, 173, 44);">
+                    <td colspan="3">
+                        <input type="checkbox" id="email" name="transaction" checked>
+                        <label for="email">Send to Email</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="send-mobile-phone"><b>Send to Mobile Phone</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="send-mobile-phone" placeholder="1234567890">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="send-email"><b>Send to Email</b></label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="email" id="send-email" placeholder="mfmm2g13@soton.ac.uk">
+                    </td>
+                </tr>
+            </table>
+            <!--buat tombol kirim-->
+            <p style="text-align:center;"><button type="submit" style="background-color:rgb(9, 197, 21);">Generate Nabr
+                    Link</button></p>
+            <hr>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
