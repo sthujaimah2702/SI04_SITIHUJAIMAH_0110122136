@@ -1,0 +1,30 @@
+.container {
+    /*untuk membuat agar konten baris kesamping*/
+    display: flex;
+    /*untuk membagi konten sama besar jaraknya*/
+    justify-content: space-around;
+}
+
+.kotak {
+    border: 3px solid black;
+    /*nambahin lebar*/
+    width: 150px;
+    /*mengatur ketinggian suatu elemen*/
+    height: 700px;
+}
+
+.item-1 {
+    background-color: yellow;
+}
+
+.item-2 {
+    background-color: orange;
+}
+
+.item-3 {
+    background-color: lightgreen;
+}
+
+.item-4 {
+    background-color: aqua;
+}

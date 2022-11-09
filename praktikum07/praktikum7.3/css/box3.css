@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    /*mengatur jarak baris*/
+    flex-direction: row;
+    margin: 0;
+}
+
+.outer-col-1 {
+    background-color: lightgreen;
+    flex: 1;
+}
+
+.outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.inner-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-col {
+    flex: 4;
+}
+
+/* untuk artikel */
+.inner-col article {
+    min-height: 60vh;
+    background-color: grey;
+}
+
+.inner-row aside {
+    background-color: skyblue;
+    flex: 1;
+}
+
+footer {
+    background-color: blue;
+    height: 20vh;
+}
+
+header {
+    background-color: orange;
+    height: 20vh;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1px;
+    margin: 7px;
+}

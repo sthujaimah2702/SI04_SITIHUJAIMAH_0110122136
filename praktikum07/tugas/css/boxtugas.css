@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: row;
+    margin: 0;
+}
+
+.kolom {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.baris1 {
+    display: flex;
+}
+
+.baris2 {
+    display: flex;
+}
+
+.baris1 nav {
+    min-height: 30vh;
+    background-color: yellow;
+}
+.baris1 article {
+    min-height: 30vh;
+    background-color: orange;
+    flex: 1;
+}
+
+.baris2 nav {
+    min-height: 30vh;
+    background-color: yellow;
+}
+
+.baris2 article {
+    min-height: 30vh;
+    background-color: aqua;
+    flex: 1;
+}
+
+header {
+    background-color: greenyellow;
+    min-height: 20vh;
+    flex: 1;
+}
+
+header,
+nav,
+article {
+    padding: 10vh;
+    margin: 2vh;
+}
