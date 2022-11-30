@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAKTIKUM 9.2</title>
+</head>
+<body>
+    <h2>DOLLAR KE RUPIAH</h2>
+
+    <form>
+        Dollar : <input type="number" id="dollar">
+        <br>
+        Kurs Rupiah : <input type="number" id="rupiah" value="14650">
+        <br>
+        <!--atribut onclick berguna untuk menjalankan program apabila diklik-->
+        <input type="button" value="Hitung" onclick="hitung_dolar();">
+        <br>
+        Hasil : <input type="text" id="hasil">
+    </form>
+
+    <script>
+        function hitung_dolar() {
+            //nilai value untuk menangkap hasil inputan dari pengguna
+            let d = document.getElementById("dollar").value;
+            let r = document.getElementById("rupiah").value;
+
+            //buat rumus kurs rupiah dan dolar
+            let h = d * r;
+            document.getElementById("hasil").value = "Rp." + h;
+        }
+    </script>
+
+    <h2>RUPIAH KE DOLLAR</h2>
+
+    <form>
+        Rupiah : <input type="number" id="rupiah2">
+        <br>
+        <!--atribut onclick berguna untuk menjalankan program apabila diklik-->
+        <input type="button" value="Hitung" onclick="hitung_rupiah();">
+        <br>
+        Hasil : <input type="text" id="hasil2">
+    </form>
+
+    <script>
+        function hitung_rupiah() {
+            //nilai value untuk menangkap hasil inputan dari pengguna
+            let r = document.getElementById("rupiah2").value;
+
+            //buat rumus kurs rupiah dan dolar
+            let h = r * (1/14650);
+            document.getElementById("hasil2").value = "$." + h.toFixed(2);
+        }
+    </script>
+</body>
+</html>

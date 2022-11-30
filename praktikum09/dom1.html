@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRAKTIKUM 9.1</title>
+</head>
+<body>
+    <h1>MENGHITUNG LUAS DAN KELILING LINGKARAN</h1>
+
+    <!--BUAT TAG KOSONG MENGGUNAKAN SPAN-->
+    <span id="phi"></span>
+    <br>
+    <span id="jari"></span>
+    <br>
+    <span id="luas"></span>
+    <br>
+    <span id="keliling"></span>
+
+    <!--kode javascript-->
+    <script>
+        //const fungsunya untuk membuat variabel yang nilainya tetap atau tidak bisa diubah
+        //buat variabel phi
+        const phi = 3.14;
+
+        //let fungsinya buat membuat variabel yang bisa diubah nilainya
+        //buat variabel jari-jari
+        let r = 14;
+
+        //buat variabel luas
+        let L = phi * (r * r);
+
+        //buat variabel keliling
+        let K = phi * (2 * r);
+
+        document.getElementById("phi").innerHTML = "Phi : " + phi;
+
+        document.getElementById("jari").innerHTML = "Jari-jari : " + r;
+
+        document.getElementById("luas").innerHTML = "Luas lingkaran : " + L;
+
+        document.getElementById("keliling").innerHTML = "Keliling lingkaran : " + K;
+    </script>
+</body>
+</html>
