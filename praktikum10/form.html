@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #box {
+            border: 1px solid black;
+            height: 300px;
+            padding: 0px 5px;
+            margin: 5px;
+            width: 510px;
+            text-align: center;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+        }
+
+        fieldset{
+            width: 500px;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <div>
+            <h1>FORM VALIDATION</h1>
+            <form>
+                <h3>Nama Pelanggan</h3>
+                <input type="text" id="nama" placeholder="contoh: Siti Hujaimah">
+                <br>
+                <h3>Email</h3>
+                <input type="email" id="email" placeholder="contoh: siti14@gmail.com">
+                <br>
+                <h3>Jam Keberangkatan</h3>
+                <input type="number" id="jam" placeholder="contoh: 00.00 - 23.59">
+                <br>
+                <h3>Tujuan Keberangkatan</h3>
+                <input type="text" id="tujuan" placeholder="contoh: Korea">
+                <br>
+                <h3>Jumlah Tiket</h3>
+                <select id="tiket">
+                    <option value="" hidden>--- jumlah tiket ---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br>
+                <input type="button" value="Submit" onclick="kirim()">
+    </fieldset>
+    </form>
+    <br>
+    <div id="box" style="background-color: rgb(202, 202, 202);">
+        <H1 style="text-align: center;">KETERANGAN</H1>
+    </div>
+    </div>
+
+    <script>
+        let nama1 = document.getElementById("nama");
+        let email1 = document.getElementById("email");
+        let jam1 = document.getElementById("jam");
+        let tujuan1 = document.getElementById("tujuan");
+        let tiket1 = document.getElementById("tiket");
+        let chatbox1 = document.getElementById("box");
+
+        function kirim() {
+            let nama_input = document.createElement("p");
+            chatbox1.appendChild(nama_input);
+            nama_input.innerHTML = "Nama Pelanggan\t: " + nama1.value;
+
+            let email_input = document.createElement("p");
+            chatbox1.appendChild(email_input);
+            email_input.innerHTML = "Email Pelanggan\t: " + email1.value;
+
+            let jam_input = document.createElement("p");
+            chatbox1.appendChild(jam_input);
+            jam_input.innerHTML = "Jam Keberangkatan\t: " + jam1.value;
+
+            let tujuan_input = document.createElement("p");
+            chatbox1.appendChild(tujuan_input);
+            tujuan_input.innerHTML = "Tujuan Keberangkatan\t: " + tujuan1.value;
+
+            let tiket_input = document.createElement("p");
+            chatbox1.appendChild(tiket_input);
+            tiket_input.innerHTML = "Total Tiket\t: " + tiket1.value;
+
+            let kirim = window.alert("Validation Berhasil");
+        }
+    </script>
+</body>
+
+</html>

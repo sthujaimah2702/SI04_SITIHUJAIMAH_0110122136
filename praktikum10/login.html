@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="form" onsubmit="kirim()">
+        Username: <input type="text" id="username">
+        <br>
+        password: <input type="password" id="password">
+        <br>
+        <button type="submit">Login</button>
+
+        <p>Username dan Password yang Benar</p>
+        <p>Username: admin</p>
+        <p>Password: integrity</p>
+    </form>
+
+    <!--Kode javascript-->
+    <script>
+        function kirim(){
+            //tangkap nilai input username
+            let nama = document.getElementById("username").value;
+            //tangkap nilai input password
+            let pass = document.getElementById("password").value;
+            //simpan hak akses elemen form ke dalam variabel form
+            let form = document.getElementById("form");
+
+            //buat logic atau kondisi if else
+            if (nama == "admin" && pass == "integrity") {
+                //untuk menambahkan atribut html (action) tapi melalui javascript
+                //memberikan tampilan pop up apabila loginnya berhasil
+                form.setAttribute("action","dashboard.html");
+                window.alert("Login Berhasil");
+            } else {
+                window.alert("Login gagal");
+            }
+            console.log(pass + name);
+        }
+    </script>
+</body>
+</html>
