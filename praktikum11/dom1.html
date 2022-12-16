@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akses Element</title>
+</head>
+<body>
+    <h1>Belajar DOM Javascript</h1>
+    <div id="box1"></div>
+
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        // akses element dengan id
+        // document.getElementById("box1").innerHTML = "Praktikum Web";
+        // simpan akses ke dalam variabel
+        let box1 = document.getElementById("box1");
+        box1.innerHTML = "Praktikum Web";
+
+        // akses elemen dengan class
+        let boxes = document.getElementsByClassName("boxes");
+        boxes[0].innerHTML = "Basic";
+        boxes[1].innerHTML = "Advance";
+        boxes[2].innerHTML = "Expert";
+
+        // akses element by tag name
+        let list = document.getElementsByTagName("li");
+        list[0].innerHTML = "Python";
+        list[1].innerHTML = "PHP";
+        list[2].innerHTML = "Java";
+    </script>
+</body>
+</html>
